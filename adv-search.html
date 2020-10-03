@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Nav Links */
+    #nav {
+      height: 7vh;
+      background: #f1f1f1;
+    }
+    .logo-top {
+      float: left;
+      padding: 15px;
+    }
+    div.link {
+      float: right;
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    .link a {
+      color: black;
+      padding: 5px;
+    }
+
+    .link a:hover {
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    .container {
+      width: 100vw;
+      padding: 20px;
+    }
+    .header {
+      border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+      padding-bottom: 20px;
+    }
+    .adv-header {
+      font-size: 1.5rem;
+      color: rgb(219, 3, 3);
+    }
+    .query {
+      padding-top: 20px;
+      font-size: 1rem;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+    }
+    .box {
+      padding-top: 10px;
+    }
+    input[type="text"] {
+      padding-left: 5px;
+      width: 45%;
+      height: 30px;
+      border: 0.2px solid rgb(199, 199, 199);
+      border-radius: 2px;
+    }
+    input[type="text"]:focus {
+      outline-color: rgba(0, 0, 255, 0.301);
+    }
+
+    .query-box-1 > label {
+      padding-right: 80px;
+    }
+    .query-box-2 > label {
+      padding-right: 8px;
+    }
+    .query-box-3 > label {
+      padding-right: 53px;
+    }
+    .query-box-4 > label {
+      padding-right: 42px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      font-size: 1.05rem;
+      background: #3c84f8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background: #186ef7;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <!-- NAV CONTAINER -->
+    <div id="nav">
+      <div class="logo-top">
+        <img src="/google.png" alt="Google Logo-Top" width="100px" />
+      </div>
+      <div class="link">
+        <a href="/index.html">Search</a>
+        <a href="/images.html">Images</a>
+      </div>
+    </div>
+    <br />
+    <!-- ADVANCE SEARCH CONTAINER -->
+    <div class="container">
+      <div class="header">
+        <span class="adv-header">Advanced Search</span>
+      </div>
+      <div class="query">
+        <form action="https://google.com/search">
+          <div class="box query-box-1">
+            <label for="q">all these words:</label>
+            <input type="text" name="q" />
+          </div>
+
+          <div class="box query-box-2">
+            <label for="p">this exact word or phrase:</label>
+            <input type="text" name="p" />
+          </div>
+          <div class="box query-box-3">
+            <label for="o">any of these words: </label>
+            <input type="text" name="o" />
+          </div>
+          <div class="box query-box-4">
+            <label for="l">none of these words:</label>
+            <input type="text" name="l" />
+          </div>
+          <div class="left">
+            <input type="submit" value="Advanced Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
