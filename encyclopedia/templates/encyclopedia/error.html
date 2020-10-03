@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block form %}
+{% csrf_token %}
+{{form}}
+{% endblock %}
+
+{% block body %}
+<h1>Error 404</h1>
+<p>Entry Not Found</p>
+{{list1}}
+{% endblock %}

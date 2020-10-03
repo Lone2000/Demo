@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block form %}
+{% csrf_token %}
+{{form}}
+{% endblock %}
+
+{% block body %}
+<h1>Entry Exists</h1>
+<p>The Added Entry Already Exists</p>
+
+{% endblock %}

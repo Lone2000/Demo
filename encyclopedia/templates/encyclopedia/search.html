@@ -1,0 +1,25 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block form %}
+{% csrf_token %}
+{{form}}
+{% endblock %}
+
+
+
+{% block body %}
+<h1>Most Relevant Pages</h1>
+
+<ul>
+    {% for search in searchs %}
+    <a href="wiki/{{ search }}">
+        <li>{{ search }}</li>
+    </a>
+    {% endfor %}
+</ul>
+
+{% endblock %}
